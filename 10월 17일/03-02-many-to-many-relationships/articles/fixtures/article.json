@@ -1,0 +1,45 @@
+[
+{
+    "model": "articles.article",
+    "pk": 1,
+    "fields": {
+        "user": 1,
+        "title": "안녕하세요",
+        "content": "Guten Tag :)",
+        "created_at": "2023-10-17T00:20:06.698Z",
+        "updated_at": "2023-10-17T00:20:06.698Z",
+        "like_users": [
+            1,
+            2
+        ]
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 2,
+    "fields": {
+        "user": 1,
+        "title": "화요일",
+        "content": "이라니 믿기지가 않네..",
+        "created_at": "2023-10-17T00:20:34.465Z",
+        "updated_at": "2023-10-17T00:20:34.465Z",
+        "like_users": [
+            2
+        ]
+    }
+},
+{
+    "model": "articles.article",
+    "pk": 3,
+    "fields": {
+        "user": 2,
+        "title": "하하",
+        "content": "하하하",
+        "created_at": "2023-10-17T01:22:52.279Z",
+        "updated_at": "2023-10-17T01:22:52.279Z",
+        "like_users": [
+            2
+        ]
+    }
+}
+]

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="m-3">
+    <h1>{{ user }}님의 페이지</h1>
+    <h3>My cart</h3>
+    {% for product in user.cart.all %}
+        <p class="m-3">{{ forloop.counter }} : {{ product.title }}</p>
+        <button class='btn btn-outline-dark'><a href="{% url "shop:addcart" product.id %}">제외하기</a></button>
+        <hr>
+    {% empty %}
+        <p>장바구니에 담긴 상품이 없습니다.</p>
+    {% endfor %}
+</div>
+
+{% endblock content %}
